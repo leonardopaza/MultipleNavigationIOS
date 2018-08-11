@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home 2-->
+        <scene sceneID="XRW-TS-gjX">
+            <objects>
+                <viewController storyboardIdentifier="outraPagina" title="Home 2" id="eVX-Iw-WwC" customClass="OutraPaginaViewController" customModule="MultipleNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xrp-qe-zpy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-Wa-mQ8">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <state key="normal" title="Abrir Outra Pagina 2"/>
+                                <connections>
+                                    <action selector="abrirOutraPagina2:" destination="eVX-Iw-WwC" eventType="touchUpInside" id="gg8-oZ-bGy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fSO-Wa-mQ8" firstAttribute="centerX" secondItem="Xrp-qe-zpy" secondAttribute="centerX" id="JSF-4k-g3a"/>
+                            <constraint firstItem="fSO-Wa-mQ8" firstAttribute="leading" secondItem="eON-ig-uvZ" secondAttribute="leading" constant="16" id="Zii-2g-llw"/>
+                            <constraint firstItem="eON-ig-uvZ" firstAttribute="trailing" secondItem="fSO-Wa-mQ8" secondAttribute="trailing" constant="16" id="akL-uC-Vwg"/>
+                            <constraint firstItem="fSO-Wa-mQ8" firstAttribute="centerY" secondItem="Xrp-qe-zpy" secondAttribute="centerY" id="ueX-5U-aOY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eON-ig-uvZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFf-wj-8cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="144"/>
+        </scene>
+    </scenes>
+</document>

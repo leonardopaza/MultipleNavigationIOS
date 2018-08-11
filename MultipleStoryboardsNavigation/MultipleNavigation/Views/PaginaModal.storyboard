@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modal-->
+        <scene sceneID="txI-eB-P0h">
+            <objects>
+                <viewController storyboardIdentifier="paginaModal" id="MR1-0z-0n0" customClass="PaginaModalViewController" customModule="MultipleNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H2Z-Tk-jnd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UrV-nc-no7">
+                                <rect key="frame" x="16" y="306.5" width="343" height="55.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beL-qy-tMc">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZr-mu-g2d">
+                                        <rect key="frame" x="0.0" y="25.5" width="343" height="30"/>
+                                        <state key="normal" title="Fechar Modal"/>
+                                        <connections>
+                                            <action selector="fecharModal:" destination="MR1-0z-0n0" eventType="touchUpInside" id="kGf-nh-7oZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UrV-nc-no7" firstAttribute="centerX" secondItem="H2Z-Tk-jnd" secondAttribute="centerX" id="Ahc-ff-INb"/>
+                            <constraint firstItem="UrV-nc-no7" firstAttribute="centerY" secondItem="H2Z-Tk-jnd" secondAttribute="centerY" id="HxA-dn-tEm"/>
+                            <constraint firstItem="UrV-nc-no7" firstAttribute="leading" secondItem="uHE-dC-H28" secondAttribute="leading" constant="16" id="TnL-lR-T7s"/>
+                            <constraint firstItem="uHE-dC-H28" firstAttribute="trailing" secondItem="UrV-nc-no7" secondAttribute="trailing" constant="16" id="uON-EW-n1Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uHE-dC-H28"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Modal" id="VJn-pf-mdg"/>
+                    <connections>
+                        <outlet property="modalLabel" destination="beL-qy-tMc" id="BeG-a6-Uh4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1d-iI-cE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.79999999999995" y="157.87106446776613"/>
+        </scene>
+    </scenes>
+</document>

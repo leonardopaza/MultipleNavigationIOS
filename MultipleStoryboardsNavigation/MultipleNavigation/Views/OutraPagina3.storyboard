@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Outra Pagina 3-->
+        <scene sceneID="xrK-nZ-UhR">
+            <objects>
+                <viewController storyboardIdentifier="outraPagina3" title="Outra Pagina 3" id="6SH-WI-o7X" customClass="OutraPagina3ViewController" customModule="MultipleNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zne-sG-6tC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="W7U-Y8-SA6">
+                                <rect key="frame" x="16" y="301.5" width="343" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="134-1p-SOA">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <state key="normal" title="Voltar Outra Pagina 2"/>
+                                        <connections>
+                                            <action selector="voltarOutraPagina2:" destination="6SH-WI-o7X" eventType="touchUpInside" id="0Kz-zp-Tzr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSO-CB-16p">
+                                        <rect key="frame" x="0.0" y="34" width="343" height="30"/>
+                                        <state key="normal" title="Voltar Home 2"/>
+                                        <connections>
+                                            <action selector="voltarHome2:" destination="6SH-WI-o7X" eventType="touchUpInside" id="eca-Y9-bai"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W7U-Y8-SA6" firstAttribute="centerX" secondItem="zne-sG-6tC" secondAttribute="centerX" id="1Ht-iR-nwy"/>
+                            <constraint firstItem="W7U-Y8-SA6" firstAttribute="leading" secondItem="RZt-XD-Asc" secondAttribute="leading" constant="16" id="9Sc-ku-UpI"/>
+                            <constraint firstItem="W7U-Y8-SA6" firstAttribute="centerY" secondItem="zne-sG-6tC" secondAttribute="centerY" id="RRN-hY-Fr7"/>
+                            <constraint firstItem="RZt-XD-Asc" firstAttribute="trailing" secondItem="W7U-Y8-SA6" secondAttribute="trailing" constant="16" id="bd6-sk-wVO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RZt-XD-Asc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GeN-Hl-VNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="152"/>
+        </scene>
+    </scenes>
+</document>
